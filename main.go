@@ -1,8 +1,11 @@
 package authservice
 
-import "fmt"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
+	engine := gin.Default()
+	engine.Run(":8000")
 
-	fmt.Println("go")
 }
